@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom|center_horizontal"
+    android:background="@drawable/main_bg"
+    android:id="@+id/ll_splash_main" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:layout_marginBottom="30dip"
+        android:text="@string/project_name"
+        android:textColor="#ff9f00"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginBottom="270dip"
+        android:text="@string/team_name"
+        android:textColor="#CCCCCC"/>
+ 
+    
+    <TextView 
+        android:id="@+id/tv_activity_main_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:textColor="#ff7fff00"
+        android:textSize="20sp"
+        android:text="@string/version"/>
+    
+    <ProgressBar 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"/>
+
+</LinearLayout>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:title="设置模式">
+        <CheckBoxPreference
+            android:key="lefthome"
+            android:title="你离开家了吗"/>
+        <CheckBoxPreference 
+            android:key="night"
+            android:title="你睡觉了吗"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="网络设置">
+        <CheckBoxPreference 
+            android:key="inside"
+            android:title="内网连接"/>
+        <CheckBoxPreference 
+            android:key="outside"
+            android:title="外网连接"/>
+        <EditTextPreference 
+            android:key="outsideip"
+            android:title="外网IP"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="定时设置">
+        <CheckBoxPreference 
+            android:title="是否开启定时模式"
+            android:key="timer"/>
+        <Preference 
+            android:title="离家时间"
+            android:key="lefthometime"/>
+        <Preference 
+            android:title="回家时间"
+            android:key="comebacktime"/>
+        <Preference 
+            android:title="睡眠时间"
+            android:key="sleeptime"/>
+        <Preference 
+            android:title="起床时间"
+            android:key="getuptime"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.sharpdeep.android_smarthouse.MjpegView
+        android:id="@+id/mySurfaceView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" />
+    
+    <ImageButton android:id="@+id/btnLeft" 
+        android:src="@drawable/sym_left"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+    
+    <ImageButton android:id="@+id/btnBack" 
+		android:src="@drawable/sym_backward"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+		android:layout_toRightOf="@id/btnLeft"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton android:id="@+id/btnStop"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/btnBack"
+        android:layout_above="@id/btnBack"/>
+    
+    
+    <ImageButton android:id="@+id/btnRight"
+        android:src="@drawable/sym_right"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/btnLeft"
+        android:layout_toRightOf="@id/btnStop" />
+  
+    	
+    <ImageButton android:id="@+id/btnForward"
+		android:src="@drawable/sym_forward"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/btnBack"
+        android:layout_above="@id/btnStop"/>
+
+</RelativeLayout>
