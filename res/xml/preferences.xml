@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="网络配置" >
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:key="isnetconfig"
+        android:summary="若不勾选，则采用默认配置"
+        android:title="手动配置" />
+
+    <EditTextPreference
+        android:key="net_name"
+        android:summary="STU"
+        android:defaultValue="STU"
+        android:title="网络名称" />
+    
+    <EditTextPreference
+        android:key="net_ip"
+        android:defaultValue="192.168.1.100"
+        android:summary="192.168.1.100"
+        android:title="IP地址" />
+    
+    <EditTextPreference
+        android:key="net_port"
+        android:summary="2001"
+        android:defaultValue="2001"
+        android:title="端口" />
+
+</PreferenceScreen>

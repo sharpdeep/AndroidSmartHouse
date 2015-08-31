@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Red">#900</color>
+    <color name="Green">#090</color>
+    <color name="Blue">#009</color>
+    <color name="White">#fff</color>
+    <color name="Black">#000</color>
+    <color name="Darkred">#8B0000</color>
+    <color name="Snow">#fffafa</color>
+    <color name="Silver">#c0c0c0</color>
+    <color name="Turquoise">#40e0d0</color>
+    <color name="card_text_color">#cccc99</color>
+    <color name="actionbar_bg_color">#30B7F3</color>
+</resources>

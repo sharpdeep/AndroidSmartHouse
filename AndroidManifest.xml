@@ -1,99 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sharpdeep.android_smarthouse"
+    package="com.sharpdeep.smarthouse.ui"
     android:versionCode="1"
-    android:versionName="2.2" >
+    android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-    
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
-    </uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/myic"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <!-- 欢迎界面 -->
         <activity
-            android:name="com.sharpdeep.android_smarthouse.WelcomeActivity"
+            android:name=".Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity 
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+
+        <!-- 主界面 -->
+        <activity android:name=".MainActivity" android:theme="@style/Theme.Sherlock.Light">
         </activity>
         
-        <!-- 温度监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.TemparetureActivity"
-            android:label="温度监控"
-            android:icon="@drawable/item1">
-            
-        </activity>
-        <!-- 湿度监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.HumidityActivity"
-            android:label="湿度监控"
-            android:icon="@drawable/item2">
-        </activity>
-        
-        <!-- 灯光监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.LightActivity"
-            android:label="灯光监控"
-            android:icon="@drawable/item32">
-        </activity>
-        
-        <!-- 防盗监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.GuardActivity"
-            android:label="防盗监控"
-            android:icon="@drawable/item4">
-        </activity>
-        
-        <!-- 防火监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.FireActivity"
-            android:label="防火监控"
-            android:icon="@drawable/item5">
-        </activity>
-        
-        <!-- 煤气监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.COActivity"
-            android:label="煤气监控">
-        </activity>
-        
-         <!-- 天然气监控界面 -->
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.CHActivity"
-            android:label="天然气监控"></activity>
-        
-        <!-- 视频监控 -->
-        <activity 
-            android:name=".VideoActivity"
-            android:screenOrientation="landscape">
-        </activity>
-        
-        <activity 
-            android:name="com.sharpdeep.android_smarthouse.SettingActivity"
-            android:label="设置">
-        </activity>
-        
-        <service android:name=".DataService">
+        <!-- 设置界面 -->
+        <activity android:name="com.sharpdeep.smarthouse.ui.SettingActivity"></activity>
+
+        <!-- 后台服务 -->
+        <service android:name="com.sharpdeep.backstage.DataService" >
         </service>
     </application>
 

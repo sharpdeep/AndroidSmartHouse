@@ -1,0 +1,10 @@
+﻿Before start this project, you should import some Lib first:
+
+ActionBarSherlock
+https://github.com/JakeWharton/ActionBarSherlock
+
+CardsUILib
+https://github.com/sharpdeep/CardsUILib
+
+SlidingMenuLib
+https://github.com/theappguruz/SlidingMenuLib

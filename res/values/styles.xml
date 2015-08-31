@@ -16,5 +16,10 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+     <style name="MyCardText">
+        <item name="android:textSize">@dimen/card_text_size</item>
+        <item name="android:textColor">@color/card_text_color</item>
+    </style>
 
 </resources>

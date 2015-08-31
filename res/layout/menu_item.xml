@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidingmenu_item_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text01"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        android:text="@string/hello_world" />
+
+</LinearLayout>
